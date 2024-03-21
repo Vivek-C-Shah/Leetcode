@@ -14,7 +14,7 @@ class Solution {
         for (int j = start; j < arr.length && arr[j] <= tar; j++) {
             lst.add(arr[j]);
             resComb(res, lst, arr, tar-arr[j], j);
-            lst.remove(lst.size() - 1);
+            lst.remove(lst.size());
         }
     }
 }
